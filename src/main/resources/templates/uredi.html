@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Uredi predmet</title>
+<link rel="stylesheet"
+
+    
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<style>
+	body {
+    background: linear-gradient(to right, #c04848, #480048);
+    min-height: 100vh
+}
+
+.text-gray {
+    color: #aaa
+}
+
+img {
+    height: 170px;
+    width: 140px
+}
+</style>
+</head>
+<body>
+<div class="container py-5">
+    <div class="row text-center text-white mb-5">
+        <div class="col-lg-7 mx-auto">
+            <h1 class="display-4">Detaljan opis</h1>
+        </div>
+ 	</div>
+ 	<div class="row">
+        <div class="col-lg-8 mx-auto">
+            <!-- List group-->
+            <ul class="list-group shadow">
+                <!-- list group item-->
+                <li class="list-group-item">
+                    <!-- Custom content-->
+                    <div class="media align-items-lg-center flex-column flex-lg-row p-3">
+                        <div class="media-body order-2 order-lg-1">
+                           <form action="#" th:action="@{/save}" th:object="${predmet}" method="POST">
+					<div class="col-md-6 form-line">
+			  			<div class="form-group">
+			  				Naziv predmeta
+					    	<input style="color:black" size="50" type="text" th:field="*{naziv}" placeholder="Unesi naziv predmeta">
+				  		</div>
+				  		<div class="form-group">
+					    	Odsjek
+					    	<input style="color:black" size="50" type="text" th:field="*{odsjek}"  placeholder="Unesi odsjek">
+					  	</div>	
+					  	<div class="form-group">
+					    	Nastavnik
+					    	<input style="color:black" size="50" type="text" th:field="*{nastavnik}"  placeholder="Ime i prezime nastavnika">
+			  			</div>
+			  		</div>
+			  		<div class="col-md-6">
+			  			<div class="form-group">
+			  				Detaljan opis
+			  			 	<textarea style="color:black" rows="4" cols="60" th:field="*{opis}"  placeholder="Detaljan opis predmeta"></textarea>
+			  			</div>
+			  			<div>
+
+			  				<button type="submit" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>Snimi</button>
+			  			</div>
+			  			
+					</div>
+				</form>
+                            </div>
+                        </div>
+                    </div> <!-- End -->
+                </li>
+ 			</ul>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Study space | Welcome</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color:green;
+      color:white;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+   
+    
+   
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+    h1{
+        font-family: Brush Script MT, Brush Script Std, cursive;
+        font-size:60px;
+    }
+    .container-fluid{
+    font-family:cursive;
+    }
+    
+    
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Početna</a></li>
+        <li><a href="/pregledPredmeta" style="color:white">Pregled predmeta</a></li>
+        <li><a href="/azuriranjePredmeta" style="color:white">Ažuriranje predmeta</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">   
+<div class="col-sm-2 sidenav">
+  
+    </div> 
+  <div class="row content">
+    <div class="col-sm-8 text-center"> 
+      <h1 align="center">Study space</h1>
+      <h3 align="center">Dobro došli na stranicu Study space</h3>
+      <p>Study space predstavlja mjesto gdje svi mogu postaviti svoje artikle koje bi da prodaju. Idejom sliči OLX.ba aplikaciju, što je i krajnji cilj pružiti sve mogućnosti klijentima.Artikli se pohranjuju i ocjenjuju u Googleovom paketu aplikacija za produktivnost koji omogućavaju sura Artikli se pohranjuju i ocjenjuju u Googleovom paketu aplikacija za produktivnost koji omogućavaju sura </p>
+      <hr></br> </br><strong>Prednosti</strong></br>
+         Artikli se pohranjuju i ocjenjuju u Googleovom paketu aplikacija za produktivnost koji omogućavaju suradnju između prodavača i kupca ili kupca od kupca.Umjesto da trošimo vrijeme na odlazak do pradavnica,  sve artikle možemo naći na online stranici, gdje ih možemo i naručiti.
+         Artikli se pohranjuju i ocjenjuju u Googleovom paketu aplikacija za produktivnost koji omogućavaju sura Artikli se pohranjuju i ocjenjuju u Googleovom paketu aplikacija za produktivnost koji omogućavaju sura. Artikli se pohranjuju i ocjenjuju u Googleovom paketu aplikacija za produktivnost koji omogućavaju sura. Artikli se pohranjuju i ocjenjuju u Googleovom paketu aplikacija za produktivnost koji omogućavaju sura
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet"
+
+    
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<style>
+	body {
+    background: linear-gradient(to right, #c04848, #480048);
+    min-height: 100vh
+}
+
+.text-gray {
+    color: #aaa
+}
+
+img {
+    height: 170px;
+    width: 140px
+}
+</style>
+</head>
+<body>
+<div class="container py-5">
+    <div class="row text-center text-white mb-5">
+        <div class="col-lg-7 mx-auto">
+            <h1 class="display-4">Detaljan opis</h1>
+        </div>
+ 	</div>
+ 	<div class="row">
+        <div class="col-lg-8 mx-auto">
+            <!-- List group-->
+            <ul class="list-group shadow">
+                <!-- list group item-->
+                <li class="list-group-item">
+                    <!-- Custom content-->
+                    <div class="media align-items-lg-center flex-column flex-lg-row p-3">
+                        <div class="media-body order-2 order-lg-1">
+                           Naziv predmeta: <h5 class="mt-0 font-weight-bold mb-2" th:text="${predmet.naziv}"></h5></br>
+                           Odsjek:<h5 class="mt-0 font-weight-bold mb-2" th:text="${predmet.odsjek}"></h5></br>
+                           Nastavnik: <h5 class="mt-0 font-weight-bold mb-2" th:text="${predmet.nastavnik}"></h5></br>
+                                <!-- <h6 class="font-weight-bold my-2">₹64,999</h6> -->
+                           Opis: <h5 class="mt-0 font-weight-bold mb-2" th:text="${predmet.opis}"></h5></br>
+                            </div>
+                        </div>
+                        <a href="/pregledPredmeta"><button type="button" class="btn btn-primary">Nazad</button></a>
+                    </div> <!-- End -->
+                    
+                </li>
+ 			</ul>
+		</div>
+	</div>
+</div>
+</body>
+</html>
